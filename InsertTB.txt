@@ -1,0 +1,47 @@
+INSERT INTO Student(numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (1, 'Dupont', 'Jean', '2004-01-22', '456 Pl Gest', '46894', 'LLOAO' );
+INSERT INTO Student(numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (2, 'Durand', 'Kevin', '2004-11-12', '542 Pl Las', '46894', 'LLOAO' );
+INSERT INTO Student(numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (3, 'Martin', 'Paul', '2004-09-14', '2 Pl Pasc', '46894', 'LLOAO');
+INSERT INTO Student(numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (4, 'Jam', 'Jeanne', '2004-08-02', '98 Pl Loils', '23345', 'PACA' );
+INSERT INTO Student(numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (5, 'Kyk', 'Pascal', '2004-04-30', '56 Pl Masd', '97453', 'PLLISTO' );
+INSERT INTO Student(numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (6, 'Herve', 'Max', '2004-12-25', '12 Pl Perz', '13052', 'NUMALI' );
+INSERT INTO Student(numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (7, 'Aulo', 'Dave', '2004-08-24', '1 Pl Moze', '14899', 'LYON' );
+
+INSERT INTO Matter(codemat, wording, coef) VALUES (1, 'math', 1 );
+INSERT INTO Matter(codemat, wording, coef) VALUES (2, 'sport', 5 );
+INSERT INTO Matter(codemat, wording, coef) VALUES (3, 'info', 2 );
+
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(1,'1/1/2014', 'b02', 1 );
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(2,'2/15/2014', 'a12', 2 );
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(3,'3/14/2015', 'c52', 3 );
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(4,'5/28/2013', 'b02', 1 );
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(5,'6/30/2014', 'a32', 2 );
+
+INSERT INTO Notation(score, numstud, numtest) VALUES(12, 1, 1);
+INSERT INTO Notation(score, numstud, numtest) VALUES(10, 2, 1);
+INSERT INTO Notation(score, numstud, numtest) VALUES(14, 3, 1);
+INSERT INTO Notation(score, numstud, numtest) VALUES(10, 4, 1);
+INSERT INTO Notation(score, numstud, numtest) VALUES(12, 5, 1);
+
+INSERT INTO Notation(score, numstud, numtest) VALUES(20, 1, 2);
+INSERT INTO Notation(score, numstud, numtest) VALUES(20, 2, 2);
+INSERT INTO Notation(score, numstud, numtest) VALUES(14, 4, 2);
+INSERT INTO Notation(score, numstud, numtest) VALUES(10, 5, 2);
+INSERT INTO Notation(score, numstud, numtest) VALUES(12, 6, 2);
+
+INSERT INTO Notation(score, numstud, numtest) VALUES(12, 1, 3);
+INSERT INTO Notation(score, numstud, numtest) VALUES(10, 2, 3);
+INSERT INTO Notation(score, numstud, numtest) VALUES(14, 3, 3);
+INSERT INTO Notation(score, numstud, numtest) VALUES(10, 4, 3);
+INSERT INTO Notation(score, numstud, numtest) VALUES(12, 5, 3);
+
+INSERT INTO Notation(score, numstud, numtest) VALUES(9, 2, 4);
+INSERT INTO Notation(score, numstud, numtest) VALUES(2, 3, 4);
+INSERT INTO Notation(score, numstud, numtest) VALUES(4, 4, 4);
+INSERT INTO Notation(score, numstud, numtest) VALUES(0, 5, 4);
+INSERT INTO Notation(score, numstud, numtest) VALUES(1, 6, 4);
+
+INSERT INTO Notation(score, numstud, numtest) VALUES(6, 1, 5);
+INSERT INTO Notation(score, numstud, numtest) VALUES(4, 2, 5);
+INSERT INTO Notation(score, numstud, numtest) VALUES(3, 3, 5);
+INSERT INTO Notation(score, numstud, numtest) VALUES(8, 4, 5);
+INSERT INTO Notation(score, numstud, numtest) VALUES(9, 5, 5);

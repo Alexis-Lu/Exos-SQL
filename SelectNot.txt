@@ -1,0 +1,11 @@
+Select count(numtest) from Test;
+Select name, firstname, Matter.wording from Student inner join Notation on Student.numstud = Notation.numstud inner join Test on Notation.numtest = Test.numtest inner join Matter on Test.codemat = Matter.codemat;
+Select name, firstname, Matter.wording, score from Student inner join Notation on Student.numstud = Notation.numstud inner join Test on Notation.numtest = Test.numtest inner join Matter on Test.codemat = Matter.codemat;
+Select score from Notation where score >= 10;
+Select name, firstname from Student inner join Notation on Student.numstud = Notation.numstud where score >=20;
+Select name, firstname, avg(score) from Student inner join Notation on Student.numstud = Notation.numstud group by Student.numstud;
+Select * from Test where testdate BETWEEN '2014-01-01' AND '2014-06-30';
+Select numtest, testdate, place, Matter.wording from Test inner join Matter on Test.codemat = Matter.codemat;
+Select name, firstname, avg(score) from Student inner join Notation on Student.numstud = Notation.numstud group by Student.numstud ORDER by avg(score) DESC;
+Select wording, avg(Notation.score) from Matter inner join Test on Test.codemat = Matter.codemat inner join Notation on Test.numtest = Notation.numtest group by Matter.wording HAVING count(Notation.score) >1;
+Select avg(score), numtest from Notation group by numtest having count (Distinct numstud) < 6;

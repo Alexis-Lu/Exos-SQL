@@ -1,0 +1,31 @@
+CREATE DABATASE exercice1;
+CREATE TABLE Matter ( 
+    codemat varchar(255) PRIMARY KEY,
+    wording varchar(255),
+    coef float
+);
+CREATE TABLE Student (
+    numstud int NOT NULL,
+    name varchar(255),
+    firstname varchar(255),
+    dateofbirth DATE,
+    street varchar(255),
+    postalcod varchar(255),
+    city varchar(255),
+    PRIMARY KEY (numstud)
+);
+CREATE TABLE Test(
+    numtest int NOT NULL,
+    testdate DATE,
+    place varchar(255),
+    codemat varchar(255),
+    PRIMARY KEY (numtest),
+    FOREIGN KEY (codemat) REFERENCES Matter(codemat)
+);
+CREATE TABLE Notation(
+    score float,
+    numstud int,
+    numtest int,
+    FOREIGN KEY (numstud) REFERENCES Student(numstud);
+    FOREIGN KEY (numtest) REFERENCES Test(numtest)
+);

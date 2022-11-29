@@ -1,0 +1,2 @@
+SELECT Distinct wording, sum(coef) *100 / (SELECT sum(coef) from Matter inner join Test on Test.codemat = Matter.codemat) from Matter inner join Test on Test.codemat = Matter.codemat group by wording;
+SELECT sum(coef) from Matter inner join Test on Test.codemat = Matter.codemat;

@@ -1,4 +1,4 @@
-CREATE DABATASE exercice1;
+CREATE database exercice1;
 CREATE TABLE Matter ( 
     codemat varchar(255) PRIMARY KEY,
     wording varchar(255),
@@ -26,6 +26,6 @@ CREATE TABLE Notation(
     score float,
     numstud int,
     numtest int,
-    FOREIGN KEY (numstud) REFERENCES Student(numstud);
+    FOREIGN KEY (numstud) REFERENCES Student(numstud),
     FOREIGN KEY (numtest) REFERENCES Test(numtest)
 );

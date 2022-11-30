@@ -10,11 +10,11 @@ INSERT INTO Matter(codemat, wording, coef) VALUES (1, 'math', 1 );
 INSERT INTO Matter(codemat, wording, coef) VALUES (2, 'sport', 5 );
 INSERT INTO Matter(codemat, wording, coef) VALUES (3, 'info', 2 );
 
-INSERT INTO Test(numtest, testdate, place, codemat) VALUES(1,'1/1/2014', 'b02', 1 );
-INSERT INTO Test(numtest, testdate, place, codemat) VALUES(2,'2/15/2014', 'a12', 2 );
-INSERT INTO Test(numtest, testdate, place, codemat) VALUES(3,'3/14/2015', 'c52', 3 );
-INSERT INTO Test(numtest, testdate, place, codemat) VALUES(4,'5/28/2013', 'b02', 1 );
-INSERT INTO Test(numtest, testdate, place, codemat) VALUES(5,'6/30/2014', 'a32', 2 );
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(1,'2014-01-01', 'b02', 1 );
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(2,'2014-02-15', 'a12', 2 );
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(3,'2015-03-14', 'c52', 3 );
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(4,'2013-05-28', 'b02', 1 );
+INSERT INTO Test(numtest, testdate, place, codemat) VALUES(5,'2014-06-30', 'a32', 2 );
 
 INSERT INTO Notation(score, numstud, numtest) VALUES(12, 1, 1);
 INSERT INTO Notation(score, numstud, numtest) VALUES(10, 2, 1);
